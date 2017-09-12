@@ -17,8 +17,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  password: 1q2w3e4r
-  port: 5433
+  password: <% ENV['PG_PASS_DEVEL'] %>
+  port: <% ENV['PG_PORT_DEVEL'] %>
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -82,6 +82,7 @@ test:
 #
 production:
   <<: *default
-  database: DeviseActionMailer_production
-  username: DeviseActionMailer
-  password: <%= ENV['DEVISEACTIONMAILER_DATABASE_PASSWORD'] %>
+  database: APP_sample_pgsql
+  username: <%= ENV['PG_USER_PROD'] %>
+  password: <%= ENV['PG_PASS_PROD'] %>
+  host: <%= ENV['PG_HOST_PROD'] %>
