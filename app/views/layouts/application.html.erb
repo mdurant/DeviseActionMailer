@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DeviseActionMailer</title>
+    <title>Devise Action Mailer</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,6 +11,7 @@
   <body>
   <p class="notice"><%= notice %></p>
 	<p class="alert"><%= alert %></p>
+  <%= render "layouts/header" %>
     <%= yield %>
   </body>
 </html>
