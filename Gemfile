@@ -28,6 +28,8 @@ gem 'simple_form'
 gem 'gravatarify', '~> 3.0.0'
 gem 'public_activity'
 gem 'googlecharts'
+gem 'chartkick'
+gem 'groupdate'
 #gem 'oj'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
