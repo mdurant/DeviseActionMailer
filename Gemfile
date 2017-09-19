@@ -26,6 +26,8 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 
 gem 'simple_form'
 gem 'gravatarify', '~> 3.0.0'
+gem 'public_activity'
+gem 'googlecharts'
 #gem 'oj'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
